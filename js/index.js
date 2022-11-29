@@ -56,13 +56,14 @@ buttonStop.addEventListener("click", function () {
 buttonSoundOn.addEventListener("click", function () {
   buttonSoundOn.classList.add("hide");
   buttonSoundOff.classList.remove("hide");
-  sound.bgAudioStart()
+
+  sound.bgAudioPause()
 });
 
 buttonSoundOff.addEventListener("click", function () {
   buttonSoundOff.classList.add("hide");
   buttonSoundOn.classList.remove("hide");
-  sound.bgAudioPause()
+  sound.bgAudioStart()
 });
 
 buttonSet.addEventListener("click", function () {
